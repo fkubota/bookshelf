@@ -29,9 +29,20 @@
         </v-hover>
         </v-card>
       </template>
-      <v-card>
 
-        <v-card-title style="color:#208ea3">paper title</v-card-title>
+      <template v-slot:default="dialog">
+      <v-card>
+          <v-toolbar elevation='3px'>
+          <v-card-title style="color:#208ea3">
+              paper title
+          </v-card-title>
+          <v-spacer></v-spacer>
+          <v-card-actions>
+          <v-btn icon @click="dialog.value = false">
+                  <v-icon>mdi-close</v-icon>
+          </v-btn>
+          </v-card-actions>
+          </v-toolbar>
         <v-divider></v-divider>
         <v-card-text>
 
@@ -114,7 +125,8 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
 
         </v-card-text>
 
-      </v-card>
+        </v-card>
+    </template>
     </v-dialog>
   </v-row>
 </template>
