@@ -140,7 +140,7 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
   color: #aaaaaa
 }
 .img1 {
-    background-image: url('./images001/hover_background001.png');
+    background-image: url('./../../images/hover_background001.png');
     background-size: cover;
 }
 
