@@ -132,7 +132,7 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
 </script>
 <style>
 .image {
-  width: 100px;
+  width: 150px;
   max-width: 100%;
 }
 
