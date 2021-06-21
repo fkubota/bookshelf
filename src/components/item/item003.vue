@@ -8,7 +8,7 @@
       <template v-slot:activator="{ on, attrs }">
         <v-card
             hover
-            min-width="200" max-width="300" 
+            width='250'
             class="ma-2"
             v-bind='attrs' v-on='on'
             >
@@ -20,14 +20,11 @@
                 <v-card-text class="card_text">
                     hogehoge and hoge----gee----- and hogehoge no mi no nouryokusya
                 </v-card-text>
-        <v-chip-group
-                column
-                class="ml-2"
-                >
-            <v-chip small dark color='#208ea3b0'>ML</v-chip>
-            <v-chip small dark color='#208ea3b0'>DL</v-chip>
-            <v-chip small dark color='#208ea3b0'>Image</v-chip>
-        </v-chip-group>
+        <b-container class="d-flex justify-content-end">
+            <v-chip class="ma-1" small dark color='#208ea3b0'>ML</v-chip>
+            <v-chip class="ma-1" small dark color='#208ea3b0'>DL</v-chip>
+            <v-chip class="ma-1" small dark color='#208ea3b0'>Image</v-chip>
+        </b-container>
             </div>
         </v-hover>
         </v-card>
@@ -78,7 +75,7 @@
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg003.png')">
+           :src="require('./images001/bg002.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
@@ -143,7 +140,8 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
   color: #aaaaaa
 }
 .img1 {
-    background:url(https://cdn.vuetifyjs.com/images/cards/cooking.png)
+    background-image: url('./images001/hover_background001.png');
+    background-size: cover;
 }
 
 .img2 {
