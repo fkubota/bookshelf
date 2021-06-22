@@ -15,15 +15,19 @@
         <v-hover>
             <div slot-scope="{ hover }" :class="`${hover? 'img1': 'img2'}`">
                 <v-card-title style="color:#208ea3">
-                    XGBoost: A Scalable Tree Boosting System
+                  {{ title }}
                 </v-card-title>
                 <v-card-text class="card_text">
-                  勾配ブースティングの木。
+                  {{ body }}
                 </v-card-text>
         <b-container class="d-flex justify-content-end">
-            <v-chip class="ma-1" small dark color='#208ea3b0'>ML</v-chip>
-            <v-chip class="ma-1" small dark color='#208ea3b0'>Table</v-chip>
-            <v-chip class="ma-1" small dark color='#208ea3b0'>Tree</v-chip>
+          <v-chip
+              class = 'ma-1' small dark color='#208ea3b0'
+              v-for='chip in chips'
+              :key='chip.name'
+              >
+              {{ chip.name }}
+          </v-chip>
         </b-container>
             </div>
         </v-hover>
@@ -34,7 +38,7 @@
       <v-card>
           <v-toolbar elevation='3px'>
           <v-card-title style="color:#208ea3">
-              XGBoost: A Scalable Tree Boosting System
+            {{ title }}
           </v-card-title>
           <v-spacer></v-spacer>
           <v-card-actions>
@@ -122,8 +126,23 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
         })
       },
     },
+
+    data () {
+      return {
+
+        title: 'XGBoost: A Scalable Tree Boosting System',
+        body: '勾配ブースティング木',
+        chips: [
+            {name: 'ML'},
+            {name: 'Table'},
+            {name: 'Tree'},
+            ],
+
+        }
+      }
   }
 </script>
+
 <style>
 .image {
   width: 150px;
