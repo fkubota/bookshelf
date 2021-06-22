@@ -62,6 +62,7 @@
     <v-content class='mt-5'>
         <v-container>
             <v-row justify="center">
+                <v-col><item001/></v-col>
                 <v-col><item003/></v-col>
                 <v-col><item003/></v-col>
                 <v-col><item003/></v-col>
@@ -83,11 +84,13 @@
 
 <script>
     import item003 from './item/item003';
+    import item001 from './item/item001';
 
     export default {
             name: 'App',
             components: {
                     item003,
+                    item001,
 
                 },
         };

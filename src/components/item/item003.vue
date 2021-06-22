@@ -50,49 +50,49 @@
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg001.png')">
+           :src="require('./images003/bg001.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg002.png')">
+           :src="require('./images003/bg002.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg003.png')">
+           :src="require('./images003/bg003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg003.png')">
+           :src="require('./images003/bg003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg003.png')">
+           :src="require('./images003/bg003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg003.png')">
+           :src="require('./images003/bg003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg002.png')">
+           :src="require('./images003/bg002.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/bg003.png')">
+           :src="require('./images003/bg003.png')">
         </expandable-image>
     </v-col>
 </v-row>
