@@ -8,7 +8,7 @@
       <template v-slot:activator="{ on, attrs }">
         <v-card
             hover
-            width='250'
+            width='270'
             class="ma-2"
             v-bind='attrs' v-on='on'
             >
