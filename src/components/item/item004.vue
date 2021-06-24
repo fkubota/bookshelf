@@ -108,6 +108,7 @@ Kaggleのクレジットカードのデータセットで10個のモデルをAUC
 - <a href='https://d1wqtxts1xzle7.cloudfront.net/39570235/A_cost-sensitive_decision_tree_approach_20151031-2600-1vf1ph9.pdf?1446294650=&response-content-disposition=inline%3B+filename%3DA_cost_sensitive_decision_tree_approach.pdf&Expires=1624523062&Signature=PfGUzVWVGVKKD3jeKA6UUu-hodSv8zoQb6SCZI20rF7gBX3oqcamC-gDbhLD2Tlp~WyofFYqsvfJGAt1EO0wK~7uNjJPtw7DRT8QTLMEfJpFFlGrempS57OgIn87jESJplsTQqB1g5PmUbJY7dU-E7Kl54uXt8xN0AKAusU43qQmMauZn8pDB3BQ5nfsyP1v~bdrJ-cj2JQO--nUds-bGZCRnx5~xiG7K1ahcwF3IPN6yuKU6YAuKhXx2vVmAfBlXVK-cvGx334oL620lvyE4kKXrGgU3lTYIztY0~SbtYa-UYGff0YJvaLPoYLnC1LvbKjo6UAzSIQ8OxEDweJQXw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA'>cost-sensitive learningについての論文</a>。 <br>
 - 3つの問題(インバランス、ドリフト、検証待ち時間)について言及している<a href='https://re.public.polimi.it/retrieve/handle/11311/1044896/260717/08038008.pdf'>論文</a>。<br>
 
+- LSTM使った<a href='https://isiarticles.com/bundles/Article/pre/pdf/97397.pdf'>論文</a>。<br>
 
 <br><br>
 
