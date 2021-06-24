@@ -17,7 +17,7 @@
                 <div class="text-caption card_text mr-2" style="text-align: right">
                   {{ date_ }}
                 </div>
-                <v-card-title style="color:#208ea3" class='pt-0'>
+                <v-card-title style="color:#208ea3" class="pt-0 text-subtitle-2 font-weight-bold">
                   {{ title }}
                 </v-card-title>
                 <v-card-text class="card_text">
@@ -65,59 +65,49 @@
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images003/image001.jpg')">
+           :src="require('./images004/image001.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images003/image002.jpg')">
+           :src="require('./images004/image002.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images003/image003.jpg')">
-        </expandable-image>
-    </v-col>
-    <v-col cols="3">
-        <expandable-image 
-           class="image" 
-           :src="require('./images003/image004.jpg')">
-        </expandable-image>
-    </v-col>
-    <v-col cols="3">
-        <expandable-image 
-           class="image" 
-           :src="require('./images003/image005.jpg')">
+           :src="require('./images004/image003.png')">
         </expandable-image>
     </v-col>
 </v-row>
 
 
 <br/> <br/>
-<h3 class='contents-title'>メモ</h3>
-<ul>
-  <li> <strong>万能近似定理</strong>: 層が２つあるニューラルネットワークは、1層当たりのパラメータの数が十分多ければ、どんな連続な関数でも(無視できる誤差の範囲で)近似できる。</li>
-  <ul>
-  <li>   3層以上はむしろ害悪である</li>
-  <li>   ではなぜResNetなどの層の多いNNがいい精度を出しているのか？</li>
-  <li>   そもそもなめらかでない関数を扱っている-->なめらかでない関数もNNなら表現可能(活性化関数)</li>
-  </ul>
-  <li> これまでの常識では、パラメータを増やすとバイアスが小さくなる。しかし小さくしすぎると過剰適合してしまう。</li>
-  <ul>
-  <li>   これまでの常識: 過剰適合のしやすさ= sqrt(NNの自由度/訓練データの数)</li>
-  <li>   NNは膨大な数のパラメータがあるがなぜ過剰適合を抑えつついい精度を出しているのか？</li>
-  <li>   本ではこれらに対して3つの重要な理論を紹介している。どれもメリデメはある。</li>
-    <ul>
-  <li>     <strong>暗黙的正則化</strong>: データ・アルゴリズムの構造実質的なモデルを制限する</li>
-  <li>     <strong>損失平坦性</strong>: 損失関数の平坦さが複雑性誤差を抑制する</li>
-  <li>     <strong>二重降下</strong>: 大モデル極限ではデータのスペクトルがタイトな上限を与える</li>
-    </ul>
-  </ul>
-  <li>     <strong>これまでデータ分析の常識では、バイアスとバリアンスはトレードオフにあった。しかし、新理論の確立により、パラメータと増やすことでバイアスとバリアンスを同時に減少させることが可能になるかもしれない。</strong></li>
+<h3 class='contents-title'>どんなもの？</h3>
+クレジットカードの不正データセット(Kaggle)を用いて、教師あり(6個)vs教師なし(4個)のモデルを10個試す。評価にはAUCを使う。インバランス(284,807:497)なのが特徴。
+<br/> <br/>
 
-</ul>
+<h3 class='contents-title'>先行研究と比べてどこがすごい？</h3>
+教師ありvs教師なしで比較しているところ。
+<br/> <br/>
+
+<h3 class='contents-title'>技術や手法のキモはどこ？</h3>
+特になし。
+<br/> <br/>
+
+<h3 class='contents-title'>どうやって有効だと検証した？</h3>
+Kaggleのクレジットカードのデータセットで10個のモデルをAUCで評価。
+<br/> <br/>
+
+<h3 class='contents-title'>議論はある？</h3>
+教師ありは、ハイパフォーマンスを出すが、データのラベル付にコストがかかりメンテナンスが大変。教師なしはそのあたりが有利。
+<br/> <br/>
+
+<h3 class='contents-title'>次に読むべきものは？</h3>
+
+
+
 <br><br>
 
         </v-card-text>
@@ -141,9 +131,9 @@
       return {
 
         date_: '2021-06-24',
-        title: '[本]深層学習の原理に迫る',
-        body: '深層学習がなぜうまく行くのかについて書かれている本。万能近似定理のその先が書かれている。',
-        link: 'https://www.amazon.co.jp/dp/4000297031',
+        title: 'A Comparison Study of Credit Card Fraud Detection: Supervised versus Unsupervised',
+        body: 'クレジットカードの不正利用検知について。教師ありvs教師なし がテーマ。',
+        link: 'https://arxiv.org/pdf/1904.10604.pdf',
         chips: [
             {name: 'Book'},
             {name: 'ML'},

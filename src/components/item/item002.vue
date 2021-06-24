@@ -14,7 +14,10 @@
             >
         <v-hover>
             <div slot-scope="{ hover }" :class="`${hover? 'img1': 'img2'}`">
-                <v-card-title style="color:#208ea3">
+                <div class="text-caption card_text mr-2" style="text-align: right">
+                  {{ date_ }}
+                </div>
+                <v-card-title style="color:#208ea3" class='pt-0 text-subtitle-1 font-weight-bold'>
                   {{ title }}
                 </v-card-title>
                 <v-card-text class="card_text">
@@ -145,6 +148,7 @@
     data () {
       return {
 
+        date_: '2021-06-23',
         title: '[日本語]機械学習による中小企業の信用スコアリングモデルの構築',
         body: 'hoge',
         link: 'https://sigfin.org/?plugin=attach&refer=019-04&openfile=SIG-FIN-019-04.pdf',
