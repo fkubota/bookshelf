@@ -150,7 +150,7 @@
 
         date_: '2021-06-23',
         title: '[日本語]機械学習による中小企業の信用スコアリングモデルの構築',
-        body: 'hoge',
+        body: '中小企業のデフォルトリスクについて。リコーの研究所の論文。',
         link: 'https://sigfin.org/?plugin=attach&refer=019-04&openfile=SIG-FIN-019-04.pdf',
         chips: [
             {name: 'Fintech'},
