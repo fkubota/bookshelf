@@ -36,10 +36,10 @@
 
       <template v-slot:default="dialog">
       <v-card>
-          <v-toolbar elevation='3px'>
-          <v-card-title style="color:#208ea3">
+        <v-toolbar elevation='3px'>
+          <v-toolbar-title style="color:#208ea3">
             {{ title }}
-          </v-card-title>
+          </v-toolbar-title>
           <v-spacer></v-spacer>
           <v-tooltip bottom>
             <template v-slot:activator="{ on, attrs }">
@@ -177,4 +177,5 @@
 .img2 {
   background-color: #fafafa;
 }
+
 </style>

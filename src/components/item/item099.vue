@@ -15,19 +15,15 @@
         <v-hover>
             <div slot-scope="{ hover }" :class="`${hover? 'img1': 'img2'}`">
                 <v-card-title style="color:#208ea3">
-                  {{ title }}
+                    paper title
                 </v-card-title>
                 <v-card-text class="card_text">
-                  {{ body }}
+                    hogehoge and hoge----gee----- and hogehoge no mi no nouryokusya
                 </v-card-text>
         <b-container class="d-flex justify-content-end">
-          <v-chip
-              class = 'ma-1' small dark color='#208ea3b0'
-              v-for='chip in chips'
-              :key='chip.name'
-              >
-              {{ chip.name }}
-          </v-chip>
+            <v-chip class="ma-1" small dark color='#208ea3b0'>ML</v-chip>
+            <v-chip class="ma-1" small dark color='#208ea3b0'>DL</v-chip>
+            <v-chip class="ma-1" small dark color='#208ea3b0'>Image</v-chip>
         </b-container>
             </div>
         </v-hover>
@@ -37,9 +33,9 @@
       <template v-slot:default="dialog">
       <v-card>
           <v-toolbar elevation='3px'>
-          <v-toolbar-title style="color:#208ea3">
-            {{ title }}
-          </v-toolbar-title>
+          <v-card-title style="color:#208ea3">
+              paper title
+          </v-card-title>
           <v-spacer></v-spacer>
           <v-card-actions>
           <v-btn icon @click="dialog.value = false">
@@ -54,31 +50,49 @@
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/image001.png')">
+           :src="require('./images099/bg001.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/image002.png')">
+           :src="require('./images099/bg002.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/image003.png')">
+           :src="require('./images099/bg003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/image004.png')">
+           :src="require('./images099/bg003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images001/image005.png')">
+           :src="require('./images099/bg003.png')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images099/bg003.png')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images099/bg002.png')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images099/bg003.png')">
         </expandable-image>
     </v-col>
 </v-row>
@@ -106,7 +120,7 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
 <br/> <br/>
 
 <h3 class='contents-title'>次に読むべきものは？</h3>
-- <a href='http://www.audentia-gestion.fr/MICROSOFT/lightgbm.pdf'>lightgbmの論文</a>
+hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdjfjasdlkfjaslkdjf
 <br><br>
 
         </v-card-text>
@@ -126,23 +140,8 @@ hogehoge and hoge lsdakjlsdakjf;klasjdl;kfjasdkljflasjdkfjk;asldjfl;kasdjflkasdj
         })
       },
     },
-
-    data () {
-      return {
-
-        title: 'XGBoost: A Scalable Tree Boosting System',
-        body: '勾配ブースティング木',
-        chips: [
-            {name: 'ML'},
-            {name: 'Table'},
-            {name: 'Tree'},
-            ],
-
-        }
-      }
   }
 </script>
-
 <style>
 .image {
   width: 150px;
