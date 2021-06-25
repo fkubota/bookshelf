@@ -67,6 +67,7 @@
                 <v-col><item002/></v-col>
                 <v-col><item003/></v-col>
                 <v-col><item004/></v-col>
+                <v-col><item005/></v-col>
 
                 <v-col><item099/></v-col>
                 <v-col><item099/></v-col>
@@ -92,6 +93,8 @@
     import item002 from './item/item002';
     import item003 from './item/item003';
     import item004 from './item/item004';
+    import item005 from './item/item005';
+
     import item099 from './item/item099';
 
     export default {
@@ -101,6 +104,7 @@
                     item002,
                     item003,
                     item004,
+                    item005,
                     item099,
 
                 },
