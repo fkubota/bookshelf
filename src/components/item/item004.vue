@@ -137,9 +137,10 @@ Kaggleのクレジットカードのデータセットで10個のモデルをAUC
         body: 'クレジットカードの不正利用検知について。教師ありvs教師なし がテーマ。',
         link: 'https://arxiv.org/pdf/1904.10604.pdf',
         chips: [
-            {name: 'Book'},
+            {name: 'Credit'},
             {name: 'ML'},
             {name: 'Deep'},
+            {name: 'Unsupervised'},
             ],
 
         }
