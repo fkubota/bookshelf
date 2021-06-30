@@ -23,6 +23,7 @@ def main(fname):
 
     # table
     dfs = tabula.read_pdf(fname, lattice=True, pages='all')
+    # plt.rcParams['font.family'] = "Hiragino Sans"
     for df in dfs:
         # graphとか拾ってくる時があるので、nullが0の時のみ取得
         if (len(df)!=0) and (df.isnull().sum().sum()==0):
