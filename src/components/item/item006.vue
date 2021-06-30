@@ -72,7 +72,7 @@
   <li><strong>Cost of Tests</strong>: テストコスト。テストする時に多額のお金が発生するなど。薬を試すときにお金がめっちゃかかるとかはまさにそれ。</li>
   <li><strong>Cost of Teacher</strong>: コレチョットヨクワカラナイ。</li>
   <li><strong>Cost of Intervention</strong>: 介入のコスト。特徴量ABCがありそれぞれが材料だとすると、ABCの量を変える事によりコストが変わる。Cが高い材料だったら,,,などなど。</li>
-  <li><strong>Cost of Archivements</strong>: 望まない成果のコスト。ヨウワカラン。</li>
+  <li><strong>Cost of Unwanted Archivements</strong>: 望まない成果のコスト。ヨウワカラン。</li>
   <li><strong>Cost of Computation</strong>: 計算コスト。言わずもがな。</li>
 </ul>
 
