@@ -68,6 +68,7 @@
                 <v-col><item003/></v-col>
                 <v-col><item004/></v-col>
                 <v-col><item005/></v-col>
+                <v-col><item006/></v-col>
 
                 <v-col><item099/></v-col>
                 <v-col><item099/></v-col>
@@ -94,6 +95,7 @@
     import item003 from './item/item003';
     import item004 from './item/item004';
     import item005 from './item/item005';
+    import item006 from './item/item006';
 
     import item099 from './item/item099';
 
@@ -105,6 +107,8 @@
                     item003,
                     item004,
                     item005,
+                    item006,
+
                     item099,
 
                 },
