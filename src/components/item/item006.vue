@@ -14,9 +14,10 @@
             >
         <v-hover>
             <div slot-scope="{ hover }" :class="`${hover? 'img1': 'img2'}`">
-                <div class="text-caption card_text mr-2" style="text-align: right">
-                  {{ date_ }}
-                </div>
+              <div class="card_text text-caption">
+                <p class="ml-2 pb-0" style="float: left">006</p>
+                <p class="mr-2 pb-0" style="text-align: right">{{ date_ }}</p>
+              </div>
                 <v-card-title style="color:#208ea3" class="pt-0 text-subtitle-1 font-weight-bold">
                   {{ title }}
                 </v-card-title>

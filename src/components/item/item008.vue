@@ -15,10 +15,10 @@
         <v-hover>
             <div slot-scope="{ hover }" :class="`${hover? 'img1': 'img2'}`">
               <div class="card_text text-caption">
-                <p class="ml-2 pb-0" style="float: left">002</p>
+                <p class="ml-2 pb-0" style="float: left">{{ no }}</p>
                 <p class="mr-2 pb-0" style="text-align: right">{{ date_ }}</p>
               </div>
-                <v-card-title style="color:#208ea3" class='pt-0 text-subtitle-1 font-weight-bold'>
+                <v-card-title style="color:#208ea3" class="pt-0 text-subtitle-1 font-weight-bold">
                   {{ title }}
                 </v-card-title>
                 <v-card-text class="card_text">
@@ -40,7 +40,7 @@
 
       <template v-slot:default="dialog">
       <v-card>
-        <v-toolbar elevation='3px'>
+          <v-toolbar elevation='3px'>
           <v-toolbar-title style="color:#208ea3">
             {{ title }}
           </v-toolbar-title>
@@ -66,70 +66,77 @@
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images002/image001.png')">
+           :src="require('./images008/image001.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images002/image002.png')">
+           :src="require('./images008/image002.jpeg')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images002/image003.png')">
+           :src="require('./images008/image003.png')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images002/image004.png')">
+           :src="require('./images008/image004.jpeg')">
         </expandable-image>
     </v-col>
     <v-col cols="3">
         <expandable-image 
            class="image" 
-           :src="require('./images002/image005.png')">
+           :src="require('./images008/image005.png')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images008/image006.png')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images008/image007.png')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images008/image008.jpeg')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images008/image009.jpeg')">
+        </expandable-image>
+    </v-col>
+    <v-col cols="3">
+        <expandable-image 
+           class="image" 
+           :src="require('./images008/image010.jpeg')">
         </expandable-image>
     </v-col>
 </v-row>
 
-
 <br/> <br/>
 <h3 class='contents-title'>どんなもの？</h3>
-- 融資を行う際にデフォルトリスクを予測したい。 <br>
-- 国内の中小企業のデータを用いて、機械学習手法によりスコアリングモデルを構築する。 <br>
-- 学習は企業が融資実行後にデフォルトしたかどうかを示すフラグを教師データとして学習を行った。 <br>
-- 様々なモデルとそのスタッキングで検証。 <br>
+インテックという企業の与信モデルの話。  <br>
+2015年と少し古い記事だが勉強になることは多い。  <br>
+「インテックの与信モデルの特徴と今後の展開」とほとんど同じ内容で、←の方が新しい。
 
 <br/> <br/>
-<h3 class='contents-title'>先行研究と比べてどこがすごい？</h3>
-- 消費者向けがほとんどの報告。今回は法人向けデータ。  
-
-<br/> <br/>
-<h3 class='contents-title'>技術や手法のキモはどこ？</h3>
-- データが多い。 <br>
-- スタッキングを使っている。 <br>
-
-
-<br/><br/>
-<h3 class='contents-title'>どうやって有効だと検証した？</h3>
-- CAP曲線から得られるAR値で評価し、スタッキングがダントツでスコア良かった。 <br>
-- 学習データが多いほど有利であるということも証明している。 <br>
-
-<br/> <br/>
-<h3 class='contents-title'>議論はある？</h3>
-
-<br/> <br/>
-<h3 class='contents-title'>次に読むべきものは？</h3>
-- CAP曲線とAR値に関するもの。
 
 
 <br><br>
 
         </v-card-text>
-
         </v-card>
     </template>
     </v-dialog>
@@ -148,16 +155,15 @@
 
     data () {
       return {
-
-        date_: '2021-06-23',
-        title: '[日本語]機械学習による中小企業の信用スコアリングモデルの構築',
-        body: '中小企業のデフォルトリスクについて。リコーの研究所の論文。',
-        link: 'https://sigfin.org/?plugin=attach&refer=019-04&openfile=SIG-FIN-019-04.pdf',
+        no: '008',
+        date_: '2021-07-06',
+        title: '[日本語] 銀行の自動審査ロジックの動的化',
+        body: 'JICCのデータが使えることによる自動審査ロジックの変化について。',
+        link: 'https://www.ai-gakkai.or.jp/jsai2015/webprogram/2015/pdf/1J4-OS-13a-3.pdf',
         chips: [
-            {name: 'Fintech'},
             {name: 'Credit'},
-            {name: 'ML'},
-            {name: 'Deep'},
+            {name: 'Bayes'},
+            {name: 'MLOps'},
             ],
 
         }
@@ -182,5 +188,4 @@
 .img2 {
   background-color: #fafafa;
 }
-
 </style>
