@@ -12,6 +12,14 @@
       <v-spacer></v-spacer>
       <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
+              <v-btn icon href='https://fkubota.github.io/portfolio/' v-bind="attrs" v-on="on">
+                  <v-icon>mdi-account</v-icon>
+              </v-btn>
+          </template>
+          <span>portfolio</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
               <v-btn icon href='https://fkubota.github.io/timeline/' v-bind="attrs" v-on="on">
                   <v-icon>mdi-clock-outline</v-icon>
               </v-btn>
