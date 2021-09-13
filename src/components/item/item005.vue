@@ -160,7 +160,7 @@ SLRは今後、この分野で使われていくだろうと書かれていた�
     data () {
       return {
 
-        date_: '2021-06-25',
+        date_: '2021/06/25',
         title: 'A cost-sensitive decision tree approach for fraud detection',
         body: 'クレジットカードの不正検知にCost-Sensitive Learningを使った論文。',
         link: 'https://silo.tips/download/this-article-appeared-in-a-journal-published-by-elsevier-the-attached-copy-is-fu-86',

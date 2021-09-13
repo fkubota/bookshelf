@@ -121,7 +121,7 @@
     data () {
       return {
 
-        date_: '2021-06-30',
+        date_: '2021/06/30',
         title: '[日本語]インテックの与信モデルの特徴と今後の展開',
         body: '与信モデルの作成から運用までの例を説明。モデルは古いが参考になることは多い。',
         link: 'https://www.intec.co.jp/company/itj/itj17/contents/itj17_12-17.pdf',

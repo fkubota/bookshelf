@@ -133,7 +133,7 @@ Kaggleのクレジットカードのデータセットで10個のモデルをAUC
     data () {
       return {
 
-        date_: '2021-06-24',
+        date_: '2021/06/24',
         title: 'A Comparison Study of Credit Card Fraud Detection: Supervised versus Unsupervised',
         body: 'クレジットカードの不正利用検知について。教師ありvs教師なし がテーマ。',
         link: 'https://arxiv.org/pdf/1904.10604.pdf',

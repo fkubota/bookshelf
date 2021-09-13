@@ -156,7 +156,7 @@
     data () {
       return {
         no: '008',
-        date_: '2021-07-06',
+        date_: '2021/07/06',
         title: '[日本語] 銀行の自動審査ロジックの動的化',
         body: 'JICCのデータが使えることによる自動審査ロジックの変化について。',
         link: 'https://www.ai-gakkai.or.jp/jsai2015/webprogram/2015/pdf/1J4-OS-13a-3.pdf',

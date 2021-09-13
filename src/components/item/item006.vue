@@ -121,7 +121,7 @@
     data () {
       return {
 
-        date_: '2021-06-30',
+        date_: '2021/06/30',
         title: 'Types of Cost in Inductive Concept Learning',
         body: '機械学習で発生するコストについてまとめた論文。',
         link: 'https://arxiv.org/pdf/cs/0212034.pdf',
