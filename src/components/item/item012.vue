@@ -113,7 +113,7 @@
       return {
         no: '011',
         date_: '2021/08/30',
-        title: '社会人1年目からのとりあえず日経新聞が読める本',
+        title: '[ビジネス書] 社会人1年目からのとりあえず日経新聞が読める本',
         body: '昔読んでよかったので再読。タイトルの通りで日本経済の数字感覚が学べる。',
         link: 'https://www.amazon.co.jp/%E7%A4%BE%E4%BC%9A%E4%BA%BA1%E5%B9%B4%E7%9B%AE%E3%81%8B%E3%82%89%E3%81%AE%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E6%97%A5%E7%B5%8C%E6%96%B0%E8%81%9E%E3%81%8C%E8%AA%AD%E3%82%81%E3%82%8B%E6%9C%AC-%E3%80%8C%E3%82%84%E3%82%8B%E3%81%98%E3%82%83%E3%82%93%E3%80%82%E3%80%8D%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9-%E5%B1%B1%E6%9C%AC-%E5%8D%9A%E5%B9%B8/dp/4799318497/ref=pd_vtp_1/356-4338985-3848325?pd_rd_w=lmul6&pf_rd_p=949e26f5-c2ef-4c96-bfde-49d7614d0317&pf_rd_r=CWQ2JQ1EQACBHH94KRWP&pd_rd_r=383c1d94-98af-4c39-a5ee-088507dfb0a3&pd_rd_wg=MD4by&pd_rd_i=4799318497&psc=1',
         chips: [
